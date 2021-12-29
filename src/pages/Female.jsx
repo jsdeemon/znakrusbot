@@ -19,7 +19,7 @@ export function Female() {
         <Dialog
          onFinish={(answers) => {
            //  console.log(answers);
-             let message = `👩‍🦱\n(1) Имя: ${answers.name}\n(2) Возраст: ${answers.age}\n(3) Семейное положение: ${answers.familystatus}\n(4) Дети: ${answers.children}\n(5) Рост: ${answers.height}\n(6) Вес: ${answers.weight}\n(7) Образование: ${answers.education}\n(8) Место работы: ${answers.workplace}\n(9) Профессия: ${answers.profession}\n(10) Возраст для кандидатки: ${answers.сandidatage}\n(11) Город проживания: ${answers.city}\n(12) Обращаться: @${chat.username}\n\n--------------------------------------------\n(13) Дополнительная информация:\n\n${answers.about}`
+             let message = `👩‍🦱\n(1) Имя: ${answers.name}\n(2) Возраст: ${answers.age}\n(3) Семейное положение: ${answers.familystatus}\n(4) Дети: ${answers.children}\n(5) Рост: ${answers.height}\n(6) Вес: ${answers.weight}\n(7) Образование: ${answers.education}\n(8) Место работы: ${answers.workplace}\n(9) Профессия: ${answers.profession}\n(10) Возраст для кандидата: ${answers.сandidatage}\n(11) Город проживания: ${answers.city}\n(12) Обращаться: @${chat.username}\n\n--------------------------------------------\n(13) Дополнительная информация:\n\n${answers.about}`
 
              bot.sendMessage(CHANNEL, message)
              bot.sendMessage(chat.id, `Ваша анкета опубликована на канале https://t.me/znakruschannel`)
